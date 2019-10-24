@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Paris = City.create(city_name: "Paris")
+City.create(city_name: Faker::JapaneseMedia::OnePiece.location)
 Poti = Dog.create(dog_name: "Poti", city_id: 1)
-David = Dogsitter.create(first_name: "David", city_id: 1)
+Dogsitter.create(first_name: Faker::JapaneseMedia::DragonBall.character, city_id: 1)
 Jardin_du_luxembourg = Stroll.create(place_stroll: "Jardin_du_Luxembourg", dog_id: 1, dogsitter_id: 1)
